@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+div.navbar-brand > a {
+  font-size: 3rem;
+  font-weight: 400;
+  text-decoration: none !important;
+  font-family: serif;
+  color: #eee;
+}
