@@ -1,11 +1,11 @@
-= simple_form_for(@pic, html: { multipart: true, class: 'form-inline' }) do |f|
+= simple_form_for @pic, html: { multipart: true }  do |f|
   - if @pic.errors.any?
     #errors
       %h2
       = pluralize(@pic.errors.count, "error")
       prevent this Pic from saving
       %ul
-        -@pic.errors.full_message.each do |msg|
+        -@pic.errors.full_messages.each do |msg|
           %li= msg
 
   .form-group
