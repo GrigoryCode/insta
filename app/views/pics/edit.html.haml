@@ -1,5 +1,8 @@
-%h1 Fix Pic!
-
-= render 'form'
-
-= link_to "Cancel", pic_path
+.col-md-8.col-md-offset-2
+  .row
+    .panel.panel-default
+      .panel-heading
+        %h2 Fix Pic
+      .panel-body
+        =render 'form'
+        = link_to "Cancel", pic_path, class: "btn btn-link"
