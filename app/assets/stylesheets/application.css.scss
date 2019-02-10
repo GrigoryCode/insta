@@ -25,11 +25,11 @@ div.navbar-brand > a {
   color: #eee;
 }
 
-.btn-link {
+a, .btn-link {
   color: #31b0d5;
 }
 
-.btn-link:hover {
+a:hover, .btn-link:hover {
   color: gray;
   text-decoration: none;
 }
