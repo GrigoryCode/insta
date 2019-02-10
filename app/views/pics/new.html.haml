@@ -4,4 +4,5 @@
       .panel-heading
         %h2 Post Pic
       .panel-body
+        = image_tag @pic.image.url, class: 'pic-image'
         =render 'form'

@@ -16,6 +16,7 @@ gem 'haml', '~> 5.0', '>= 5.0.4'
 gem 'simple_form', '~> 4.1'
 gem 'bootstrap-sass', '~> 3.4'
 gem 'devise', '~> 4.6'
+gem 'paperclip', '~> 6.1'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 

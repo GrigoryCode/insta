@@ -2,8 +2,8 @@
   .row
     .panel.panel-default
       .panel-heading
+        = image_tag @pic.image.url, class: 'pic-image'
         %h2= @pic.title
-      .panel-body
         %p= @pic.description
         %p
         Pic by
