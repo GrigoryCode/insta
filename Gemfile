@@ -18,6 +18,8 @@ gem 'bootstrap-sass', '~> 3.4'
 gem 'devise', '~> 4.6'
 gem 'paperclip', '~> 6.1'
 gem 'masonry-rails', '~> 0.2.4'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+gem 'acts_as_votable', '~> 0.12.0'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 
