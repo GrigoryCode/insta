@@ -6,11 +6,12 @@
         %h2= @pic.title
         %p= @pic.description
         %p
-        Pic by
+        by
         =@pic.user.email
 
         %br
-
-        = link_to "Back", root_path, class: 'btn btn-link'
-        = link_to "Edit", edit_pic_path, class: 'btn btn-link'
-        = link_to "Delete", pic_path, method: :delete, data: { confirm: "Are you sure?" }, class: 'btn btn-link'
+        
+        - if user_signed_in?
+          -# = link_to "Back", root_path, class: 'btn btn-link'
+          = link_to "Edit", edit_pic_path, class: 'btn btn-link'
+          = link_to "Delete", pic_path, method: :delete, data: { confirm: "Are you sure?" }, class: 'btn btn-link'
