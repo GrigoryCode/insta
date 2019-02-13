@@ -1,8 +1,5 @@
 .col-md-6.col-md-offset-3
-  .row
-    .panel.panel-default
-      .panel-body
-        %h3 Fix Pic
-        = image_tag @pic.image.url, class: 'pic-image'
-        = render 'form'
-        = link_to "Cancel", pic_path, class: "btn btn-link"
+  %h3 Fix Pic
+  = image_tag @pic.image.url, class: 'pic-image'
+  = render 'form'
+  = link_to "Cancel", pic_path, class: "btn btn-link"
