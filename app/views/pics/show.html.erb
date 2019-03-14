@@ -1,0 +1,24 @@
+<div class="col-md-6 col-md-offset-3">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <%= image_tag @pic.image.url, class: 'pic-image' %>
+      <h3>
+        <%= @pic.title %>
+      </h3>
+      <%= link_to like_pic_path(@pic), method: :put, class: 'btn btn-default' do %>
+        <span class="glyphicon glyphicon-thumbs-up"></span>
+        <%= @pic.get_upvotes.size %>
+      <% end %>
+    </div>
+  </div>
+  <p>
+    <%= @pic.description %>
+  </p>
+  <p></p>
+  by
+  <%= @pic.user.email %>
+  <% if user_signed_in? %>
+    <%= link_to "Edit", edit_pic_path, class: 'btn' %>
+    <%= link_to "Delete", pic_path, method: :delete, data: { confirm: "Are you sure?" }, class: 'btn btn-danger' %>
+  <% end %>
+</div>
